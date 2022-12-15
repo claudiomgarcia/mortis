@@ -8,81 +8,128 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+    <!-- CDN CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Templo Mortis | La Fuerza</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <div id="logo">
-                <p>
-                    Templo
-                </p>
-                <p>
-                    Mortis
-                </p>
+        <section class="pt-3 text-center text-white w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+                        <a href="/index.html" class="ms-md-2">
+                            <img src="/assets/img/logo.png" class="logo" />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <nav id="menu">
-                <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>|
-                    <li>
-                        <a href="../pages/la-fuerza.html">La Fuerza</a>
-                    </li>|
-                    <li>
-                        <a href="../pages/armas.html">Armas</a>
-                    </li>|
-                    <li>
-                        <a href="../pages/naves.html">Naves</a>
-                    </li>|
-                    <li>
-                        <a href="../pages/cronologia.html">Cronología</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        </section>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/pages/la-fuerza.html">La Fuerza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/armas.html">Armas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/naves.html">Naves</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/cronologia.html">Cronología</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">
+    <div class="contenedor">
         <h1>La Fuerza</h1>
+
         <section class="contenido">
-            <p>
-                <img src="../assets/img/yoda.jpg" alt="Maestro Yoda" class="left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo porro est sequi minima repellendus
-                sint aliquam culpa. Eius modi minus iure qui aperiam nobis minima! Sequi veniam facere error aspernatur!
-                Omnis asperiores nobis eveniet nisi eum, optio tempora mollitia maiores unde numquam debitis dolore
-                alias similique tenetur dignissimos impedit! Sed temporibus harum accusantium quos perspiciatis dolorem
-                tempora, minus quia ipsa!
-            </P>
-            <p>
-                Quo sint consequuntur vitae excepturi officia odio accusamus laudantium rem quis voluptate! Modi odio
-                illo accusantium delectus. Ab, nulla, rem, voluptas quos ratione animi corporis error id eaque iure sit!
-                Porro illum, sunt, assumenda enim perspiciatis omnis totam quisquam at iste animi fugit impedit officia
-                quas ad corrupti eveniet ipsum. Totam temporibus minima hic sequi! Ab minima autem vitae voluptatem!
-                Ipsam eaque cum soluta quaerat nemo ducimus id minus similique aliquam numquam, veritatis dignissimos
-                commodi unde saepe corporis minima quas corrupti, nihil iusto beatae natus obcaecati nobis? Veniam,
-                dignissimos inventore.
+            <div class="container-fluid">
+                <div class="row"">
+                <div class=" col-sm-12 col-md-4">
+                    <img src="../assets/img/yoda.jpg" alt="Maestro Yoda">
+                </div>
+                <div class="col-sm-12 col-md-8"">
+                <p>
+                La Fuerza era un poder metafísico y vinculante, omnipresente, que era el objetivo de las órdenes monásticas de los Jedi y los Sith. Descrita por el Maestro Jedi Obi-Wan Kenobi como "
+                    un campo de energía creado por todas las cosas vivas," algunos pensaban en la Fuerza como una
+                    entidad sensible que podría ser capaz de un pensamiento inteligente—casi como si fuera una especie
+                    de Dios—mientras otros simplemente lo consideraron algo que podía ser manipulado y usado como si
+                    fuera una herramienta. La Fuerza estaba dividida en cuatro aspectos: el lado luminoso, el lado
+                    oscuro, la Fuerza de Unificación, y la Fuerza Viva. Los primeros dos aspectos eran concernientes a
+                    la brújula moral de la Fuerza en sus diversas manifestaciones. </p>
+                    <p>
+                        El lado luminoso de la Fuerza era la faceta alineada con el bien, la benevolencia y la curación,
+                        mientras que el lado oscuro de la Fuerza era el elemento alineado con el miedo, el odio, la
+                        agresión
+                        y la maldad. Los siguientes dos aspectos fueron definidos por las prominentes filosofías Jedi.
+                        La
+                        Fuerza de Unificación esencialmente abarcaba el espacio y el tiempo en su totalidad. La Fuerza
+                        Viva
+                        se ocupaba de la energía de las cosas vivientes. Para algunos Jedi, "La Fuerza era vida, y la
+                        vida
+                        era la Fuerza." Aunque la Fuerza fuera clasificada de esta manera, no había capacidades o
+                        poderes
+                        específicos que fueran sólo utilizables por un seguidor de un diferente camino de la Fuerza; la
+                        Fuerza existía parcialmente dentro de las formas de vida que la usaban, y sacaba energía de sus
+                        emociones. Algunos seres, especialmente los Sith, creían que el lado oscuro de la Fuerza era más
+                        poderoso que el de la luz, aunque era posible que el lado oscuro justo tentara más a aquellos
+                        que lo usaban (o deseaban usarlo). Otros pensaban en la Fuerza como una entidad capaz de
+                        pensamiento inteligente, casi como una especie de Dios.
+                    </P>
+                </div>
+            </div>
 
-            </P>
-            <P>
-                Assumenda ea sit corrupti iure maiores unde placeat fuga natus, nam iste ut perferendis dolore laborum
-                facilis impedit iusto mollitia! Dolore iusto odio natus ea in recusandae autem repellendus nobis!
-
-                <img src="../assets/img/grogu-fuerza.png" alt="Grogu" class="right">
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quis ab corrupti hic harum dolores qui
-                officia quaerat libero sit consectetur, consequuntur voluptatibus dicta numquam enim ducimus
-                exercitationem dolorem. Tenetur.
-            </P>
-            <P>
-                Sunt in officia saepe, voluptatem sapiente quis numquam, sint sequi dolores vero sed quae! Laborum totam
-                assumenda reiciendis veritatis illum, rerum molestias facere unde quaerat enim sed ratione eaque vitae.
-                Esse sunt natus, accusantium deserunt aliquam iste blanditiis, aut iusto eius, harum labore maxime
-                itaque totam accusamus distinctio? Aliquam provident soluta incidunt corporis eveniet unde maxime
-                laboriosam eos voluptatum adipisci?
-            </P>
+            <div class="row"">
+                <div class=" col-sm-12 col-md-8">
+                <P>
+                    Anakin Skywalker, quien, como se creía, había sido concebido por la Fuerza misma,
+                    dio
+                    crédito a la opinión de la Fuerza como un ente sensible. Aunque la Fuerza se creía que fluía por
+                    todo
+                    ser vivo, sólo podía ser aprovechada por una minoría de seres descritos como "sensibles a la
+                    Fuerza".
+                    Esta sensibilidad a la Fuerza es atribuida a diferente causas por unas opiniones u otras. Según la
+                    trílogía original y sus respectivas novelas, la sensibilidad a la Fuerza es vista desde un sentido
+                    metafísico y espiritual, mientras que en la nueva trilogía, se atribuye a una cantidad alta de
+                    microorganismos internos llamados midiclorianos que se encontraban en la sangre de los sensibles a
+                    la
+                    Fuerza: a mayor cantidad, mejor era la capacidad potencial a la Fuerza del ser. De este modo, la
+                    Fuerza
+                    pierde su carácter espiritual convirtiéndose en una cuestión química.
+                </P>
+                <P>
+                    También varía el modo de percepción de sensibilidad y poder de la fuerza: en la original saga, los
+                    usuarios de la Fuerza simplemente percibían y sentían la afinidad de los seres con la fuerza; en las
+                    nuevas entregas se mide la cantidad de midiclorianos que el individuo posee tomando una muestra de
+                    sangre. Los seres sensibles a la Fuerza eran capaces de aprovechar la Fuerza para efectuar actos de
+                    gran
+                    destreza y agilidad así como controlar y moldear el mundo a su alrededor. A veces este talento era
+                    descrito como la posesión de una fuerte "aura" de la Fuerza, y es posible que los dos rasgos
+                    estuvieran
+                    conectados.
+                </P>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <img src="../assets/img/grogu-fuerza.png" alt="Grogu">
+            </div>
         </section>
     </div>
 
@@ -91,6 +138,10 @@
             Todos los derechos reservados
         </div>
     </footer>
+    <!-- CDN JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
