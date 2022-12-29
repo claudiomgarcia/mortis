@@ -56,7 +56,6 @@
   }
 }
 
-
 body {
   font-family: 'Play', sans-serif;
   color: rgb(240, 240, 240);
@@ -83,27 +82,13 @@ a {
   font-style: normal;
 }
 
-.logo {
-  width: 220px;
-}
-
-#menu {
-  text-align: center;
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-
-#menu li {
-  display: inline;
-}
-
 #hero {
   position: relative;
   background: url("../assets/img/mortis.jpg") no-repeat center center;
   background-color: rgb(26, 26, 26);
   background-size: cover;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
   font-family: "Star Wars";
   letter-spacing: 1px;
   color: #fff;
@@ -113,7 +98,7 @@ a {
 
 .contenedor {
   position: relative;
-  background-color: rgb(26, 26, 26);
+  background-color: #212529;
   min-height: 75vh;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -142,7 +127,9 @@ footer {
 }
 
 .galeria img {
-  width: 30%;
+  width: 26%;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, #fff, #585858);
 }
 
 .contenido {
@@ -157,57 +144,152 @@ footer {
   padding: 10px;
 }
 
-.navbar a {
-  background-image: linear-gradient(to right,
-      #FFC900,
-      #FFC900 50%,
-      #fff 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
+.snip1217 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.snip1217 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1217 li {
   display: inline-block;
-  font-weight: bold;
-
-
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+.snip1217 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
   position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
 }
-
-.navbar a:before {
-  content: '';
-  background: #FFC900;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
+.snip1217 a:before,
+.snip1217 a:after {
   height: 3px;
-  transition: all 0.3s ease-in-out;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #FFC900;
+  width: 0;
 }
-
-.navbar a:hover {
-  background-position: 0;
+.snip1217 a:before {
+  top: 0;
+  left: 0;
 }
-
-.navbar a:hover::before {
+.snip1217 a:after {
+  bottom: 0;
+  right: 0;
+  
+}
+.snip1217 a:hover,
+.snip1217 .current a {
+  color: #ffffff;
+}
+.snip1217 a:hover:before,
+.snip1217 .current a:before,
+.snip1217 a:hover:after,
+.snip1217 .current a:after {
   width: 100%;
 }
 
+/* The actual timeline (the vertical ruler) */
 .timeline {
-  margin: 30px auto;
-  width: 360px;
-  border-left: 3px solid rgb(240, 240, 240);
-  padding: 0 20px 0 30px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.timeline div {
-  background-color: rgb(58, 58, 58);
-  padding: 10px 25px;
-  font-size: 16px;
-  border-left: 1px solid rgb(240, 240, 240);
-  line-height: 1.7;
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-image: linear-gradient(to bottom, #fff, #585858);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline .time_container {
+  padding: 10px 40px;
   position: relative;
-  height: 130px;
-  margin-bottom: 20px;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline .content img {
+  width: 80%;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 20px;
+  background-color: rgb(58, 58, 58);
+  background-image: linear-gradient(to top, #b6b6b6, rgb(58, 58, 58));
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .time_container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+
+  .content {
+    width: 200%;
+    ;
+  }
+
+  .galeria img{
+    width: 80%;
+  }
+}
+
+a svg:hover #github{ 
+  fill: #FFC900;
+}
+
+a svg #github{ 
+  fill: #fff;
+  transition: 350ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 350ms;
+  -webkit-transition-timing-function: ease-in-out;
 }
