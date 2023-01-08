@@ -1,0 +1,65 @@
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-image: linear-gradient(to bottom, $blanco, $gris58);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+.time_container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+    .content {
+        img {
+            width: 80%;
+        }
+    }
+}
+.left {
+    left: 0;
+}
+.right {
+    left: 50%;
+    &::after {
+        left: -16px;
+    }
+}
+.content {
+    padding: 20px 20px;
+    background-color: $gris58;
+    background-image: linear-gradient(to top, $blanco, $gris58);
+    position: relative;
+    border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+    .timeline {
+        &::after {
+            left: 31px;
+        }
+    }
+    .time_container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .right {
+        left: 0%;
+    }
+    .content {
+        width: 200%;
+    }
+    .galeria {
+        img {
+            width: 80%;
+        }
+    }
+}

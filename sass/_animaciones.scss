@@ -1,0 +1,100 @@
+$color_1: rgba(255, 255, 255, 0.5);
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+}
+
+    100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+}
+}
+
+@keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+}
+
+    100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
+}
+
+.snip1217 {
+	font-weight: 500;
+	letter-spacing: 1px;
+	* {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-transition: all 0.35s ease;
+		transition: all 0.35s ease;
+	}
+	li {
+		display: inline-block;
+		list-style: outside none none;
+		margin: 0.5em 1em;
+		padding: 0;
+	}
+	a {
+		padding: 0.3em 0;
+		color: $color_1;
+		position: relative;
+		text-decoration: none;
+		display: inline-block;
+		&:before {
+			height: 3px;
+			position: absolute;
+			content: '';
+			-webkit-transition: all 0.35s ease;
+			transition: all 0.35s ease;
+			background-color: $amarillo;
+			width: 0;
+			top: 0;
+			left: 0;
+		}
+		&:after {
+			height: 3px;
+			position: absolute;
+			content: '';
+			-webkit-transition: all 0.35s ease;
+			transition: all 0.35s ease;
+			background-color: $amarillo;
+			width: 0;
+			bottom: 0;
+			right: 0;
+		}
+		&:hover {
+			color: $blanco;
+			&:before {
+				width: 100%;
+			}
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+	.current {
+		a {
+			color: $blanco;
+			&:before {
+				width: 100%;
+			}
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+}

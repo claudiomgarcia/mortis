@@ -1,0 +1,26 @@
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#copy {
+    text-align: right;
+    padding: 20px;
+    font-size: 18px;
+}
+
+a svg:hover #github{ 
+    fill: $amarillo;
+}
+
+a svg #github{ 
+    fill: $blanco;
+    transition: 350ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 350ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
