@@ -1,0 +1,12 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+
+    img{
+        width: 26%;
+        padding: 5px;
+        background-image: linear-gradient(to bottom, $blanco, $gris58);
+    }
+}

@@ -4,14 +4,16 @@
     font-family: "Star Wars";
     src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/star-wars.woff);
 }
-@import "variables";
+@import "variables/colores";
 
-@import "reset";
+@import "normalize/reset";
 
-@import "animaciones";
+@import "componentes/animaciones";
 
-@import "contenido";
+@import "general/contenido";
 
-@import "timeline";
+@import "componentes/timeline";
 
-@import "footer";
+@import "componentes/galeria";
+
+@import "general/footer";
